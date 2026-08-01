@@ -1,15 +1,15 @@
 @echo off
 cd /d "%~dp0"
 echo ======================
-echo æ­£åœ¨æäº¤å½“å‰è¿›åº¦
+echo ÕıÔÚÌá½»µ±Ç°½ø¶È
 echo ======================
 
 git add .
 
-git commit -m "è‡ªåŠ¨æäº¤ %date% %time%"
+git commit -m "×Ô¶¯Ìá½» %date% %time%"
 
 git push
 
 echo.
-echo å®Œæˆï¼
+echo Íê³É£¡
 pause
