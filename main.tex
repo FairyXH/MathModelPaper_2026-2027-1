@@ -1,4 +1,6 @@
 \documentclass[UTF8,a4paper,oneside]{ctexart}
+\usepackage{listings}
+\usepackage{xcolor}
 
 %========================
 % 页面设置
@@ -75,6 +77,20 @@
 {1\baselineskip}
 {1\baselineskip}
 
+%代码框
+\lstset{
+    language=Python,
+    basicstyle=\small\ttfamily,
+    keywordstyle=\bfseries,
+    commentstyle=\itshape,
+    numbers=left,
+    numberstyle=\tiny,
+    frame=single,
+    breaklines=true,
+    columns=fullflexible,
+    showstringspaces=false
+}
+
 
 %========================
 % 正文格式
@@ -100,7 +116,6 @@
 
 \usepackage{booktabs}
 
-
 % 图表标题格式
 \captionsetup{
     font={small},
@@ -110,10 +125,10 @@
 
 
 % 图编号 图2.1
-\numberwithin{figure}{section}
+% \numberwithin{figure}{section}
 
 % 表编号 表3.1
-\numberwithin{table}{section}
+% \numberwithin{table}{section}
 
 
 % 图标题五号
@@ -160,240 +175,25 @@ style=gb7714-2015
 
 
 %========================
-% 标题
+% 正文装配：各章节位于 sections/ 目录
+% 多人协作时各自编辑对应文件，主文件只在增删章节时修改
 %========================
 
 \begin{document}
 
-
-%========================
-% 摘要页
-%========================
-
-
-\pagenumbering{arabic}
-
-
-\begin{center}
-
-{\heiti\zihao{3}
-数学建模论文题目名称
-}
-
-\end{center}
-
-
-\vspace{1em}
-
-
-\begin{center}
-
-{\heiti\zihao{4}
-摘\quad 要
-}
-
-\end{center}
-
-
-\zihao{-4}
-\songti
-
-
-本文针对XXXXX问题，建立了XXXXX模型。
-
-首先，对问题进行分析，提出合理假设；
-
-其次，利用XXXXX方法建立数学模型；
-
-最后，通过XXXXX算法进行求解，并对结果进行分析。
-
-结果表明，模型具有较好的准确性和可靠性。
-
-
-\vspace{1em}
-
-
-\noindent
-{\heiti\zihao{-4}
-关键词：
-}
-{\songti\zihao{-4}
-关键词1；关键词2；关键词3；关键词4
-}
-
-
+\input{sections/00-abstract}
 
 %========================
 % 正文
 %========================
 
-
-\section{问题重述}
-
-
-这里填写问题背景和问题描述。
-
-
-\subsection{问题背景}
-
-这里填写背景介绍。
-
-
-\subsection{问题重述}
-
-这里填写具体问题。
-
-
-
-\section{问题分析}
-
-
-说明问题分析过程。
-
-
-
-\section{模型假设}
-
-
-\begin{enumerate}
-
-\item 假设条件1；
-
-\item 假设条件2；
-
-\item 假设条件3。
-
-\end{enumerate}
-
-
-
-\section{符号说明}
-
-
-\begin{table}[htbp]
-\centering
-
-\caption{符号说明}
-
-\begin{tabular}{ccc}
-\toprule
-符号 & 含义 & 单位\\
-\midrule
-$x$ & 变量 & --\\
-$y$ & 输出量 & --\\
-\bottomrule
-\end{tabular}
-
-\end{table}
-
-
-
-\section{模型建立与求解}
-
-
-\subsection{模型建立}
-
-
-数学公式示例：
-
-\[
-y=ax+b
-\]
-
-
-\subsubsection{数据预处理}
-
-
-数据处理过程。
-
-
-
-\subsection{模型求解}
-
-
-算法过程。
-
-
-
-%========================
-% 图片
-%========================
-
-
-\begin{figure}[htbp]
-
-\centering
-
-\includegraphics[width=0.6\linewidth]
-{figures/example.png}
-
-\caption{示例图片}
-
-\end{figure}
-
-
-
-%========================
-% 表格
-%========================
-
-
-\begin{table}[htbp]
-
-\centering
-
-\caption{实验数据}
-
-\begin{tabular}{ccc}
-
-\toprule
-
-参数 & 数值 & 单位\\
-
-\midrule
-
-A & 10 & m\\
-
-B & 20 & s\\
-
-\bottomrule
-
-\end{tabular}
-
-\end{table}
-
-
-
-\section{模型评价与改进}
-
-
-\subsection{模型优点}
-
-
-说明模型优势。
-
-
-\subsection{模型缺点}
-
-
-说明不足。
-
-
-
-\section{参考文献}
-
-
-\printbibliography[heading=none]
-
-
-
-\section{附录}
-
-
-\newpage
-
-
-本论文没有用到程序。
-
+\input{sections/01-problem-restatement}
+\input{sections/02-problem-analysis}
+\input{sections/03-assumptions}
+\input{sections/04-symbols}
+\input{sections/05-model}
+\input{sections/06-evaluation}
+\input{sections/07-references}
+\input{sections/08-appendix}
 
 \end{document}
