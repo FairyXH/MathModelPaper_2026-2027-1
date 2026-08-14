@@ -39,3 +39,4 @@ xelatex -interaction=nonstopmode main.tex
 ```
 
 也可直接用 `提交我的修改.bat` 提交。
+"# MathModelPaper_20260812_03" 
