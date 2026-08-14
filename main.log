@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.31)  7 AUG 2026 19:20
+This is XeTeX, Version 3.141592653-2.6-0.999998 (TeX Live 2026) (preloaded format=xelatex 2026.7.31)  14 AUG 2026 23:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1067,11 +1067,11 @@ Package fontspec Info:
  [1
 
 ]) (./sections/01-problem-restatement.tex) (./sections/02-problem-analysis.tex) (./sections/03-assumptions.tex) (./sections/04-symbols.tex
-LaTeX Font Info:    Trying to load font information for U+msa on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 12.
  (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 13.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 12.
  (c:/texlive/2026/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )) (./sections/05-model.tex [2]) (./sections/06-evaluation.tex) (./sections/07-references.tex [3]) (./sections/08-appendix.tex
@@ -1111,10 +1111,10 @@ Package logreq Info: Writing requests to 'main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 21986 strings out of 468168
- 482607 string characters out of 5436524
+ 21987 strings out of 468168
+ 482616 string characters out of 5436524
  1444832 words of memory out of 5000000
- 50378 multiletter control sequences out of 15000+600000
+ 50379 multiletter control sequences out of 15000+600000
  637239 words of font info for 121 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  93i,12n,111p,1225b,5003s stack positions out of 10000i,1000n,20000p,200000b,200000s
